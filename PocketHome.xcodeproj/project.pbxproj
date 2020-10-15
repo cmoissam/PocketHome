@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		DA9F1C48253C604D0097DD00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1C46253C604D0097DD00 /* LaunchScreen.storyboard */; };
 		DA9F1C53253C604D0097DD00 /* PocketHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C52253C604D0097DD00 /* PocketHomeTests.swift */; };
 		DA9F1C5E253C604D0097DD00 /* PocketHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C5D253C604D0097DD00 /* PocketHomeUITests.swift */; };
+		DA9F1C83253C604D0097DD00 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C7F253C604D0097DD00 /* RxRelay.framework */; };
+		DA9F1C85253C604D0097DD00 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C80253C604D0097DD00 /* RxCocoa.framework */; };
+		DA9F1C87253C604D0097DD00 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C81253C604D0097DD00 /* RxSwift.framework */; };
+		DA9F1C89253C604D0097DD00 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C82253C604D0097DD00 /* RxBlocking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		DA9F1C59253C604D0097DD00 /* PocketHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F1C5D253C604D0097DD00 /* PocketHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketHomeUITests.swift; sourceTree = "<group>"; };
 		DA9F1C5F253C604D0097DD00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9F1C7F253C604D0097DD00 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		DA9F1C80253C604D0097DD00 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		DA9F1C81253C604D0097DD00 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		DA9F1C82253C604D0097DD00 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9F1C85253C604D0097DD00 /* RxCocoa.framework in Frameworks */,
+				DA9F1C83253C604D0097DD00 /* RxRelay.framework in Frameworks */,
+				DA9F1C87253C604D0097DD00 /* RxSwift.framework in Frameworks */,
+				DA9F1C89253C604D0097DD00 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +91,7 @@
 				DA9F1C51253C604D0097DD00 /* PocketHomeTests */,
 				DA9F1C5C253C604D0097DD00 /* PocketHomeUITests */,
 				DA9F1C39253C604D0097DD00 /* Products */,
+				DA9F1C7E253C604D0097DD00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +135,17 @@
 			path = PocketHomeUITests;
 			sourceTree = "<group>";
 		};
+		DA9F1C7E253C604D0097DD00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1C82253C604D0097DD00 /* RxBlocking.framework */,
+				DA9F1C80253C604D0097DD00 /* RxCocoa.framework */,
+				DA9F1C7F253C604D0097DD00 /* RxRelay.framework */,
+				DA9F1C81253C604D0097DD00 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +156,7 @@
 				DA9F1C34253C604D0097DD00 /* Sources */,
 				DA9F1C35253C604D0097DD00 /* Frameworks */,
 				DA9F1C36253C604D0097DD00 /* Resources */,
+				DA9F1C77253C604D0097DD00 /* Carthage  copy */,
 			);
 			buildRules = (
 			);
@@ -245,6 +270,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA9F1C77253C604D0097DD00 /* Carthage  copy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/CarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Carthage  copy";
+			outputFileListPaths = (
+				"$(SRCROOT)/CarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA9F1C34253C604D0097DD00 /* Sources */ = {
@@ -422,6 +470,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VYD5CW8W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PocketHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +493,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VYD5CW8W2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PocketHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
