@@ -17,6 +17,12 @@
 		DA9F1C85253C604D0097DD00 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C80253C604D0097DD00 /* RxCocoa.framework */; };
 		DA9F1C87253C604D0097DD00 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C81253C604D0097DD00 /* RxSwift.framework */; };
 		DA9F1C89253C604D0097DD00 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1C82253C604D0097DD00 /* RxBlocking.framework */; };
+		DA9F1C9D253C604D0097DD00 /* Heater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C97253C604D0097DD00 /* Heater.swift */; };
+		DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C98253C604D0097DD00 /* Light.swift */; };
+		DA9F1C9F253C604D0097DD00 /* RollerShutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C99253C604D0097DD00 /* RollerShutter.swift */; };
+		DA9F1CA0253C604D0097DD00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9A253C604D0097DD00 /* User.swift */; };
+		DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9B253C604D0097DD00 /* Module.swift */; };
+		DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9C253C604D0097DD00 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		DA9F1C80253C604D0097DD00 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		DA9F1C81253C604D0097DD00 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		DA9F1C82253C604D0097DD00 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		DA9F1C97253C604D0097DD00 /* Heater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heater.swift; sourceTree = "<group>"; };
+		DA9F1C98253C604D0097DD00 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		DA9F1C99253C604D0097DD00 /* RollerShutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollerShutter.swift; sourceTree = "<group>"; };
+		DA9F1C9A253C604D0097DD00 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA9F1C9B253C604D0097DD00 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		DA9F1C9C253C604D0097DD00 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 		DA9F1C3A253C604D0097DD00 /* PocketHome */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1C96253C604D0097DD00 /* models */,
 				DA9F1C3B253C604D0097DD00 /* AppDelegate.swift */,
 				DA9F1C3F253C604D0097DD00 /* ViewController.swift */,
 				DA9F1C44253C604D0097DD00 /* Assets.xcassets */,
@@ -144,6 +157,19 @@
 				DA9F1C81253C604D0097DD00 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9F1C96253C604D0097DD00 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1C97253C604D0097DD00 /* Heater.swift */,
+				DA9F1C9C253C604D0097DD00 /* Home.swift */,
+				DA9F1C98253C604D0097DD00 /* Light.swift */,
+				DA9F1C9B253C604D0097DD00 /* Module.swift */,
+				DA9F1C99253C604D0097DD00 /* RollerShutter.swift */,
+				DA9F1C9A253C604D0097DD00 /* User.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9F1C9D253C604D0097DD00 /* Heater.swift in Sources */,
 				DA9F1C40253C604D0097DD00 /* ViewController.swift in Sources */,
+				DA9F1CA0253C604D0097DD00 /* User.swift in Sources */,
+				DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */,
+				DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */,
+				DA9F1C9F253C604D0097DD00 /* RollerShutter.swift in Sources */,
+				DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */,
 				DA9F1C3C253C604D0097DD00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
