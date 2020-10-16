@@ -30,6 +30,7 @@
 		DA9F1CB4253C604D0097DD00 /* rollerShuttersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAE253C604D0097DD00 /* rollerShuttersData.json */; };
 		DA9F1CB5253C604D0097DD00 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAF253C604D0097DD00 /* userData.json */; };
 		DA9F1CBD253C604D0097DD00 /* ModelDecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */; };
+		DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CC8253C604D0097DD00 /* StoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		DA9F1CAE253C604D0097DD00 /* rollerShuttersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rollerShuttersData.json; sourceTree = "<group>"; };
 		DA9F1CAF253C604D0097DD00 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDecodeTest.swift; sourceTree = "<group>"; };
+		DA9F1CC8253C604D0097DD00 /* StoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		DA9F1C3A253C604D0097DD00 /* PocketHome */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1CC7253C604D0097DD00 /* services */,
 				DA9F1C96253C604D0097DD00 /* models */,
 				DA9F1C3B253C604D0097DD00 /* AppDelegate.swift */,
 				DA9F1C3F253C604D0097DD00 /* ViewController.swift */,
@@ -199,6 +202,14 @@
 				DA9F1CAF253C604D0097DD00 /* userData.json */,
 			);
 			path = mocks;
+			sourceTree = "<group>";
+		};
+		DA9F1CC7253C604D0097DD00 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CC8253C604D0097DD00 /* StoreService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 				DA9F1CA0253C604D0097DD00 /* User.swift in Sources */,
 				DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */,
 				DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */,
+				DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */,
 				DA9F1C9F253C604D0097DD00 /* RollerShutter.swift in Sources */,
 				DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */,
 				DA9F1C3C253C604D0097DD00 /* AppDelegate.swift in Sources */,
