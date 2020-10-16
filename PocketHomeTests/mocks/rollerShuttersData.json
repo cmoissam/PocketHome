@@ -1,0 +1,15 @@
+[
+        {
+            "id": 2,
+            "deviceName": "Volet roulant - Salon",
+            "position": 100,
+            "productType": "RollerShutter"
+        },
+        {
+            "id": 1,
+            "deviceName": "Volet roulant - Chambre",
+            "position": 70,
+            "productType": "RollerShutter"
+        }
+]
+

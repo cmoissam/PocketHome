@@ -1,0 +1,16 @@
+[
+        {
+            "id": 2,
+            "deviceName": "Radiateur - Chambre",
+            "mode": "OFF",
+            "temperature": 20,
+            "productType": "Heater"
+        },
+        {
+            "id": 1,
+            "deviceName": "Radiateur - Cuisine",
+            "mode": "ON",
+            "temperature": 30,
+            "productType": "Heater"
+        }
+]

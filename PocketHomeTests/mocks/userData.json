@@ -1,0 +1,12 @@
+{
+        "firstName": "Issam",
+        "lastName": "Lanouari",
+        "address": {
+            "city": "Puteaux",
+            "postalCode": 92800,
+            "street": "quai de dion bouton",
+            "streetCode": "34",
+            "country": "France"
+        },
+        "birthDate": 653702400
+}

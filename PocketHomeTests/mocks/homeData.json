@@ -1,0 +1,36 @@
+{
+    "devices": [
+        {
+            "id": 1,
+            "deviceName": "Lampe - Cuisine",
+            "intensity": 50,
+            "mode": "ON",
+            "productType": "Light"
+        },
+        {
+            "id": 2,
+            "deviceName": "Volet roulant - Salon",
+            "position": 70,
+            "productType": "RollerShutter"
+        },
+        {
+            "id": 3,
+            "deviceName": "Radiateur - Chambre",
+            "mode": "OFF",
+            "temperature": 20,
+            "productType": "Heater"
+        }
+    ],
+    "user": {
+        "firstName": "Issam",
+        "lastName": "Lanouari",
+        "address": {
+            "city": "Puteaux",
+            "postalCode": 92800,
+            "street": "quai de dion bouton",
+            "streetCode": "34",
+            "country": "France"
+        },
+        "birthDate": 653702400
+    }
+}

@@ -23,6 +23,13 @@
 		DA9F1CA0253C604D0097DD00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9A253C604D0097DD00 /* User.swift */; };
 		DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9B253C604D0097DD00 /* Module.swift */; };
 		DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1C9C253C604D0097DD00 /* Home.swift */; };
+		DA9F1CB0253C604D0097DD00 /* heatersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAA253C604D0097DD00 /* heatersData.json */; };
+		DA9F1CB1253C604D0097DD00 /* homeData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAB253C604D0097DD00 /* homeData.json */; };
+		DA9F1CB2253C604D0097DD00 /* modulesData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAC253C604D0097DD00 /* modulesData.json */; };
+		DA9F1CB3253C604D0097DD00 /* lightsData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAD253C604D0097DD00 /* lightsData.json */; };
+		DA9F1CB4253C604D0097DD00 /* rollerShuttersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAE253C604D0097DD00 /* rollerShuttersData.json */; };
+		DA9F1CB5253C604D0097DD00 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAF253C604D0097DD00 /* userData.json */; };
+		DA9F1CBD253C604D0097DD00 /* ModelDecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +72,13 @@
 		DA9F1C9A253C604D0097DD00 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA9F1C9B253C604D0097DD00 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		DA9F1C9C253C604D0097DD00 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DA9F1CAA253C604D0097DD00 /* heatersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heatersData.json; sourceTree = "<group>"; };
+		DA9F1CAB253C604D0097DD00 /* homeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeData.json; sourceTree = "<group>"; };
+		DA9F1CAC253C604D0097DD00 /* modulesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = modulesData.json; sourceTree = "<group>"; };
+		DA9F1CAD253C604D0097DD00 /* lightsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lightsData.json; sourceTree = "<group>"; };
+		DA9F1CAE253C604D0097DD00 /* rollerShuttersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rollerShuttersData.json; sourceTree = "<group>"; };
+		DA9F1CAF253C604D0097DD00 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
+		DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDecodeTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,8 @@
 		DA9F1C51253C604D0097DD00 /* PocketHomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1CA9253C604D0097DD00 /* mocks */,
+				DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */,
 				DA9F1C52253C604D0097DD00 /* PocketHomeTests.swift */,
 				DA9F1C54253C604D0097DD00 /* Info.plist */,
 			);
@@ -170,6 +186,19 @@
 				DA9F1C9A253C604D0097DD00 /* User.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		DA9F1CA9253C604D0097DD00 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CAA253C604D0097DD00 /* heatersData.json */,
+				DA9F1CAB253C604D0097DD00 /* homeData.json */,
+				DA9F1CAD253C604D0097DD00 /* lightsData.json */,
+				DA9F1CAC253C604D0097DD00 /* modulesData.json */,
+				DA9F1CAE253C604D0097DD00 /* rollerShuttersData.json */,
+				DA9F1CAF253C604D0097DD00 /* userData.json */,
+			);
+			path = mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +314,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9F1CB3253C604D0097DD00 /* lightsData.json in Resources */,
+				DA9F1CB1253C604D0097DD00 /* homeData.json in Resources */,
+				DA9F1CB0253C604D0097DD00 /* heatersData.json in Resources */,
+				DA9F1CB2253C604D0097DD00 /* modulesData.json in Resources */,
+				DA9F1CB5253C604D0097DD00 /* userData.json in Resources */,
+				DA9F1CB4253C604D0097DD00 /* rollerShuttersData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9F1C53253C604D0097DD00 /* PocketHomeTests.swift in Sources */,
+				DA9F1CBD253C604D0097DD00 /* ModelDecodeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

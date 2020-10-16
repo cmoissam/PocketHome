@@ -1,0 +1,16 @@
+[
+        {
+            "id": 1,
+            "deviceName": "Lampe - Cuisine",
+            "intensity": 50,
+            "mode": "ON",
+            "productType": "Light"
+        },
+        {
+            "id": 2,
+            "deviceName": "Lampe - Couloir",
+            "intensity": 70,
+            "mode": "OFF",
+            "productType": "Light"
+        }
+]
