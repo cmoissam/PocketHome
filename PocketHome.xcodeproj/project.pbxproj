@@ -31,6 +31,8 @@
 		DA9F1CB5253C604D0097DD00 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CAF253C604D0097DD00 /* userData.json */; };
 		DA9F1CBD253C604D0097DD00 /* ModelDecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */; };
 		DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CC8253C604D0097DD00 /* StoreService.swift */; };
+		DA9F1CD0253C604D0097DD00 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CCE253C604D0097DD00 /* AppCoordinator.swift */; };
+		DA9F1CD1253C604D0097DD00 /* SharedAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		DA9F1CAF253C604D0097DD00 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userData.json; sourceTree = "<group>"; };
 		DA9F1CBC253C604D0097DD00 /* ModelDecodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDecodeTest.swift; sourceTree = "<group>"; };
 		DA9F1CC8253C604D0097DD00 /* StoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		DA9F1CCE253C604D0097DD00 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedAppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		DA9F1C3A253C604D0097DD00 /* PocketHome */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1CCD253C604D0097DD00 /* dependencies */,
 				DA9F1CC7253C604D0097DD00 /* services */,
 				DA9F1C96253C604D0097DD00 /* models */,
 				DA9F1C3B253C604D0097DD00 /* AppDelegate.swift */,
@@ -210,6 +215,15 @@
 				DA9F1CC8253C604D0097DD00 /* StoreService.swift */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		DA9F1CCD253C604D0097DD00 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CCE253C604D0097DD00 /* AppCoordinator.swift */,
+				DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */,
+			);
+			path = dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +387,8 @@
 			files = (
 				DA9F1C9D253C604D0097DD00 /* Heater.swift in Sources */,
 				DA9F1C40253C604D0097DD00 /* ViewController.swift in Sources */,
+				DA9F1CD0253C604D0097DD00 /* AppCoordinator.swift in Sources */,
+				DA9F1CD1253C604D0097DD00 /* SharedAppDependencies.swift in Sources */,
 				DA9F1CA0253C604D0097DD00 /* User.swift in Sources */,
 				DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */,
 				DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */,
