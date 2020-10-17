@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RollerShutter: Module {
+class RollerShutter: Module, DashboardDrawableModule {
     var position: Int
     
     enum CodingKeys: String, CodingKey {

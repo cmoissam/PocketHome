@@ -33,6 +33,11 @@
 		DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CC8253C604D0097DD00 /* StoreService.swift */; };
 		DA9F1CD0253C604D0097DD00 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CCE253C604D0097DD00 /* AppCoordinator.swift */; };
 		DA9F1CD1253C604D0097DD00 /* SharedAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */; };
+		DA9F1CDD253C604D0097DD00 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CDB253C604D0097DD00 /* DashboardViewController.swift */; };
+		DA9F1CDE253C604D0097DD00 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CDC253C604D0097DD00 /* DashboardViewController.xib */; };
+		DA9F1CE3253C604D0097DD00 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CE2253C604D0097DD00 /* DashboardViewModel.swift */; };
+		DA9F1CED253C604D0097DD00 /* ModuleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1CEB253C604D0097DD00 /* ModuleTableViewCell.xib */; };
+		DA9F1CEE253C604D0097DD00 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1CEC253C604D0097DD00 /* ModuleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,11 @@
 		DA9F1CC8253C604D0097DD00 /* StoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
 		DA9F1CCE253C604D0097DD00 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedAppDependencies.swift; sourceTree = "<group>"; };
+		DA9F1CDB253C604D0097DD00 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		DA9F1CDC253C604D0097DD00 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		DA9F1CE2253C604D0097DD00 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		DA9F1CEB253C604D0097DD00 /* ModuleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModuleTableViewCell.xib; sourceTree = "<group>"; };
+		DA9F1CEC253C604D0097DD00 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		DA9F1C3A253C604D0097DD00 /* PocketHome */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1CD5253C604D0097DD00 /* scenes */,
 				DA9F1CCD253C604D0097DD00 /* dependencies */,
 				DA9F1CC7253C604D0097DD00 /* services */,
 				DA9F1C96253C604D0097DD00 /* models */,
@@ -224,6 +235,66 @@
 				DA9F1CCF253C604D0097DD00 /* SharedAppDependencies.swift */,
 			);
 			path = dependencies;
+			sourceTree = "<group>";
+		};
+		DA9F1CD5253C604D0097DD00 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CDA253C604D0097DD00 /* RollerShutterModule */,
+				DA9F1CD9253C604D0097DD00 /* LightModule */,
+				DA9F1CD8253C604D0097DD00 /* heaterModule */,
+				DA9F1CD7253C604D0097DD00 /* userProfile */,
+				DA9F1CD6253C604D0097DD00 /* dashboard */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		DA9F1CD6253C604D0097DD00 /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CEA253C604D0097DD00 /* views */,
+				DA9F1CE2253C604D0097DD00 /* DashboardViewModel.swift */,
+				DA9F1CDB253C604D0097DD00 /* DashboardViewController.swift */,
+				DA9F1CDC253C604D0097DD00 /* DashboardViewController.xib */,
+			);
+			path = dashboard;
+			sourceTree = "<group>";
+		};
+		DA9F1CD7253C604D0097DD00 /* userProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = userProfile;
+			sourceTree = "<group>";
+		};
+		DA9F1CD8253C604D0097DD00 /* heaterModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = heaterModule;
+			sourceTree = "<group>";
+		};
+		DA9F1CD9253C604D0097DD00 /* LightModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LightModule;
+			sourceTree = "<group>";
+		};
+		DA9F1CDA253C604D0097DD00 /* RollerShutterModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RollerShutterModule;
+			sourceTree = "<group>";
+		};
+		DA9F1CEA253C604D0097DD00 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DA9F1CEC253C604D0097DD00 /* ModuleTableViewCell.swift */,
+				DA9F1CEB253C604D0097DD00 /* ModuleTableViewCell.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9F1C48253C604D0097DD00 /* LaunchScreen.storyboard in Resources */,
+				DA9F1CED253C604D0097DD00 /* ModuleTableViewCell.xib in Resources */,
 				DA9F1C45253C604D0097DD00 /* Assets.xcassets in Resources */,
+				DA9F1CDE253C604D0097DD00 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,12 +461,15 @@
 				DA9F1C9D253C604D0097DD00 /* Heater.swift in Sources */,
 				DA9F1C40253C604D0097DD00 /* ViewController.swift in Sources */,
 				DA9F1CD0253C604D0097DD00 /* AppCoordinator.swift in Sources */,
+				DA9F1CEE253C604D0097DD00 /* ModuleTableViewCell.swift in Sources */,
 				DA9F1CD1253C604D0097DD00 /* SharedAppDependencies.swift in Sources */,
 				DA9F1CA0253C604D0097DD00 /* User.swift in Sources */,
 				DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */,
 				DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */,
+				DA9F1CDD253C604D0097DD00 /* DashboardViewController.swift in Sources */,
 				DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */,
 				DA9F1C9F253C604D0097DD00 /* RollerShutter.swift in Sources */,
+				DA9F1CE3253C604D0097DD00 /* DashboardViewModel.swift in Sources */,
 				DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */,
 				DA9F1C3C253C604D0097DD00 /* AppDelegate.swift in Sources */,
 			);

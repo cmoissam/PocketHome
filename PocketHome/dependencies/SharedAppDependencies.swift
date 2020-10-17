@@ -22,7 +22,10 @@ class SharedAppDependencies: SharedRootContainer {
     let storeService = StoreService()
     
     func makeDashboardViewController(coordinator: AppRoutingLogic) -> UIViewController {
-        UIViewController()
+        DashboardViewController(
+            coordinator: coordinator,
+            viewModel: DashboardViewModel(storeService: storeService)
+        )
     }
     
     func makeUserProfileViewController() -> UIViewController {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Light: Module {
+class Light: Module, DashboardDrawableModule {
     var intensity: Int
     var mode: PowerMode
     

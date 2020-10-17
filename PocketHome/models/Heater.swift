@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Heater: Module {
+class Heater: Module, DashboardDrawableModule {
 
     var temperature: Float
     var mode: PowerMode
