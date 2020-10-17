@@ -29,7 +29,9 @@ class SharedAppDependencies: SharedRootContainer {
     }
     
     func makeUserProfileViewController() -> UIViewController {
-        UIViewController()
+        UserProfileViewController(
+            viewModel: UserProfileViewModel(storeService: storeService)
+        )
     }
     
     func makeHeaterViewController(moduleId: Int) -> UIViewController {

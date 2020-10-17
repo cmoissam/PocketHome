@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  PocketHome
+
+  Created by Issam Lanouari on 17/10/2020.
+  
+*/
+
+//MARK: - Profile
+"profile.firstName" = "Prénom";
+"profile.lastName" = "Nom";
+"profile.birthdate" = "Date de Naissance";
+"profile.personalInformation" = "Informations Personels";
+"profile.adressInformation" = "Adresse";
+"profile.city" = "Ville";
+"profile.street" = "Rue";
+"profile.postalCode" = "Code Postal";
+"profile.streetCode" = "Code de la rue";
+"profile.country" = "Pays";
+"profile.button.save" = "Sauvegarder";
+"profile.alert.title" = "Erreur de validation";
+"profile.alert.message" = "Nom ou prénom invalide";
