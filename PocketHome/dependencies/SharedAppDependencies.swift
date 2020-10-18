@@ -47,6 +47,8 @@ class SharedAppDependencies: SharedRootContainer {
     }
     
     func makeRollerShutterViewController(moduleId: Int) -> UIViewController {
-        UIViewController()
+        RollerShutersViewController(
+            viewModel: RollerShuterViewModel(storeService: storeService, moduleId: moduleId)
+        )
     }
 }

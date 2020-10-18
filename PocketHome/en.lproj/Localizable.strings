@@ -26,3 +26,6 @@
 
 //MARK: - Lights
 "lights.intensity" = "intensity";
+
+//MARK: - Shutters
+"shutters.opening" = "shutter opening";
