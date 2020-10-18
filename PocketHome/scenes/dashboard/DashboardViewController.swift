@@ -100,6 +100,16 @@ extension DashboardViewController {
                 self?.pushModuleViewController(for: module.moduleId, type: module.productType)
             })
             .disposed(by: viewModel.disposeBag)
+        moduleTableView.rx.willDisplayCell
+                    .subscribe(onNext: ({ (cell,indexPath) in
+                        cell.alpha = 0
+                        let transform = CATransform3DTranslate(CATransform3DIdentity, -100, 0, 0)
+                        cell.layer.transform = transform
+                        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
+                            cell.alpha = 1
+                            cell.layer.transform = CATransform3DIdentity
+                        }, completion: nil)
+                    })).disposed(by: viewModel.disposeBag)
     }
 
     private func setupTypeSelectStackView() {
