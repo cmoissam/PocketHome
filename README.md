@@ -1,6 +1,9 @@
-# WeatherApp
+# PocketHome App
 
-Sample application display wheater details by city, support online and offline mode.
+Smart home application, simulate control of devices such as lights, roller shutters, heaters, using RxSwift
+
+## Screens
+<img src="./documentation/Screen1.png" width="23%"> <img src="./documentation/Screen2.png" width="23%"> <img src="./documentation/Screen3.png" width="23%"> <img src="./documentation/Screen4.png" width="23%">
 
 ## Requirement
 
@@ -12,14 +15,23 @@ Clone project
 ```
 git clone (remote rerpo)
 ```
+1- Add RxSwift with carthage
+```
+carthage bootstrap --platform ios
+```
 
-Run and Go !
+2- Add RxSwift with carthage (Xcode 12 and earlier)
+```
+./carthage-build.sh bootstrap --platform ios
+```
+
+Run and Enjoy !
 
 ## Documentation
 
 ### External Frameworks
 
-[RxSwift] (https://github.com/ReactiveX/RxSwift)
+[RxSwift](https://github.com/ReactiveX/RxSwift)
 
 ### Architecture
 
