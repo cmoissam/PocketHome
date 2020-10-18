@@ -34,9 +34,8 @@ class LightViewModel {
             mode.asObservable(),
             intensity.asObservable().debounce(.milliseconds(500), scheduler: MainScheduler.instance),
             resultSelector: { [weak self] mode, intensity in
-                        light.mode = PowerMode(boolMode: mode)
-                        light.intensity = intensity
-                        self?.storeService.updateLightState(light: light)
+                light.update(with: PowerMode(boolMode: mode), intensity: intensity)
+                self?.storeService.updateLightState(light: light)
             }).observe(on: MainScheduler.instance)
             .subscribe()
             .disposed(by: disposeBag)

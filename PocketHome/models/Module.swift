@@ -8,9 +8,9 @@
 import Foundation
 
 class Module: Codable {
-    var moduleId: Int
-    var moduleName: String
-    var productType: ProductType
+    private(set) var moduleId: Int
+    private(set) var moduleName: String
+    private(set) var productType: ProductType
     
     enum CodingKeys: String, CodingKey {
         case moduleId = "id", moduleName = "deviceName", productType

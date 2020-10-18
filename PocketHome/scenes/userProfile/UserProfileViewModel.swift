@@ -11,7 +11,7 @@ import RxCocoa
 class UserProfileViewModel {
     var firstName = BehaviorRelay<String>(value: "")
     var lastName = BehaviorRelay<String>(value: "")
-    var birthDate = BehaviorRelay<String>(value: "")
+    var birthDate = BehaviorRelay<String?>(value: "")
     var city = BehaviorRelay<String>(value: "")
     var street = BehaviorRelay<String>(value: "")
     var streetCode = BehaviorRelay<String>(value: "")
@@ -30,27 +30,28 @@ class UserProfileViewModel {
         self.storeService = storeService
         firstName.accept(storeService.user.value.firstName)
         lastName.accept(storeService.user.value.lastName)
-        birthDate.accept(dateFormatter.string(from: storeService.user.value.birthDate))
+        birthDate.accept(dateFormatter.string(from: storeService.user.value.birthDate ?? Date()))
         city.accept(storeService.user.value.address.city)
         street.accept(storeService.user.value.address.street)
         streetCode.accept(storeService.user.value.address.streetCode)
         country.accept(storeService.user.value.address.country)
-        postalCode.accept(String(storeService.user.value.address.postalCode))
+        postalCode.accept(String(storeService.user.value.address.postalCode ?? 0))
     }
     func saveProfile() {
-        var user = storeService.user.value
-        user.firstName = firstName.value
-        user.lastName = lastName.value
-        if let safeBirthDate = dateFormatter.date(from: birthDate.value) {
-            user.birthDate = safeBirthDate
-        }
-        if let safePostalCode = Int(postalCode.value) {
-            user.address.postalCode = safePostalCode
-        }
-        user.address.city = city.value
-        user.address.street = street.value
-        user.address.streetCode = streetCode.value
-        user.address.country = country.value
-        storeService.updateUser(with: user)
+        let newAdress = Adress(
+            city: city.value,
+            postalCode: Int(postalCode.value),
+            street: street.value,
+            streetCode: streetCode.value,
+            country: country.value
+            )
+        let newUser = User(
+            firstName: firstName.value,
+            lastName: lastName.value,
+            address: newAdress,
+            birthDate: dateFormatter.date(from: birthDate.value ?? "")
+        )
+
+        storeService.updateUser(with: newUser)
     }
 }

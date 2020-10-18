@@ -48,7 +48,9 @@ class HeatersViewController: UIViewController {
         updateTemperatureValue(value: viewModel.temperature.value)
         
         temperatureSlider
-            .rx.value
+            .rx
+            .controlEvent(.valueChanged)
+            .withLatestFrom(temperatureSlider.rx.value)
             .subscribe(onNext: { [weak self] (value) in
                 let fixedValue = roundf(value / 0.5) * 0.5
                 self?.updateTemperatureValue(value: fixedValue)

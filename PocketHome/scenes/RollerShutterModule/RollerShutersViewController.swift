@@ -50,7 +50,8 @@ class RollerShutersViewController: UIViewController {
         updateRollerPosition(value: viewModel.position.value)
         
         slider
-            .rx.value
+            .rx.controlEvent(.valueChanged)
+            .withLatestFrom(slider.rx.value)
             .subscribe(onNext: { (value) in
                 let intergerValue = Int(value)
                 self.postitionValueLabel.text = "\(intergerValue)"

@@ -9,8 +9,8 @@ import Foundation
 
 class Heater: Module, DashboardDrawableModule {
 
-    var temperature: Float
-    var mode: PowerMode
+    private(set) var temperature: Float
+    private(set) var mode: PowerMode
     
     enum CodingKeys: String, CodingKey {
         case temperature, mode
@@ -28,5 +28,15 @@ class Heater: Module, DashboardDrawableModule {
         try container.encode(temperature, forKey: .temperature)
         try container.encode(mode, forKey: .mode)
         try super.encode(to: encoder)
+    }
+}
+
+extension Heater {
+    func update(
+        with mode: PowerMode,
+        temperature: Float
+    ) {
+        self.mode = mode
+        self.temperature = temperature
     }
 }

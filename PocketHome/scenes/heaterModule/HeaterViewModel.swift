@@ -34,9 +34,11 @@ class HeaterViewModel {
             mode.asObservable(),
             temperature.asObservable().debounce(.milliseconds(500), scheduler: MainScheduler.instance),
             resultSelector: { [weak self] mode, temperature in
-                        heater.mode = PowerMode(boolMode: mode)
-                        heater.temperature = temperature
-                        self?.storeService.updateHeaterState(heater: heater)
+                heater.update(
+                    with: PowerMode(boolMode: mode),
+                    temperature: temperature
+                )
+                self?.storeService.updateHeaterState(heater: heater)
             }).observe(on: MainScheduler.instance)
             .subscribe()
             .disposed(by: disposeBag)

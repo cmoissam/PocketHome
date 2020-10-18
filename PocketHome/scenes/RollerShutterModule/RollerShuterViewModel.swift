@@ -30,8 +30,8 @@ class RollerShuterViewModel {
         position
             .debounce(.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (position) in
-            rollerShutter.position = position
+            rollerShutter.update(with: position)
             self?.storeService.updateRollerShutterState(rollerShutter: rollerShutter)
-        }).disposed(by: disposeBag)
+            }).disposed(by: disposeBag)
     }
 }

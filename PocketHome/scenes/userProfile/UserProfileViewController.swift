@@ -75,7 +75,7 @@ extension UserProfileViewController {
     private func setUpBindings() {
         lastNameTextField.rx.text.orEmpty <-> viewModel.lastName
         firstNameTextField.rx.text.orEmpty <-> viewModel.firstName
-        birthDateTextfield.rx.text.orEmpty <-> viewModel.birthDate
+        birthDateTextfield.rx.text <-> viewModel.birthDate
         cityTextField.rx.text.orEmpty <-> viewModel.city
         postalCodeTextField.rx.text.orEmpty <-> viewModel.postalCode
         streetTextField.rx.text.orEmpty <-> viewModel.street

@@ -8,7 +8,7 @@
 import Foundation
 
 class RollerShutter: Module, DashboardDrawableModule {
-    var position: Int
+    private(set) var position: Int
     
     enum CodingKeys: String, CodingKey {
         case position
@@ -24,5 +24,13 @@ class RollerShutter: Module, DashboardDrawableModule {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(position, forKey: .position)
         try super.encode(to: encoder)
+    }
+}
+
+extension RollerShutter {
+    func update(
+        with position: Int
+    ) {
+        self.position = position
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 class Light: Module, DashboardDrawableModule {
-    var intensity: Int
-    var mode: PowerMode
+    private(set) var intensity: Int
+    private(set) var mode: PowerMode
     
     enum CodingKeys: String, CodingKey {
         case intensity, mode
@@ -27,5 +27,15 @@ class Light: Module, DashboardDrawableModule {
         try container.encode(intensity, forKey: .intensity)
         try container.encode(mode, forKey: .mode)
         try super.encode(to: encoder)
+    }
+}
+
+extension Light {
+    func update(
+        with mode: PowerMode,
+        intensity: Int
+    ) {
+        self.mode = mode
+        self.intensity = intensity
     }
 }

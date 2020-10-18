@@ -8,10 +8,10 @@
 import Foundation
 
 struct User: Codable {
-    var firstName: String
-    var lastName: String
-    var address: Adress
-    var birthDate: Date
+    private(set) var firstName: String
+    private(set) var lastName: String
+    private(set) var address: Adress
+    private(set) var birthDate: Date?
     
     init() {
         firstName = "Issam"
@@ -19,14 +19,26 @@ struct User: Codable {
         address = Adress()
         birthDate = Date()
     }
+
+    init(
+        firstName: String,
+        lastName: String,
+        address: Adress,
+        birthDate: Date?
+    ) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.address = address
+        self.birthDate = birthDate
+    }
 }
 
 struct Adress: Codable {
-    var city: String
-    var postalCode: Int
-    var street: String
-    var streetCode: String
-    var country: String
+    private(set) var city: String
+    private(set) var postalCode: Int?
+    private(set) var street: String
+    private(set) var streetCode: String
+    private(set) var country: String
     
     init() {
         city = "Puteaux"
@@ -34,6 +46,20 @@ struct Adress: Codable {
         street = "quai de dion bouton"
         streetCode = "34"
         country = "France"
+    }
+
+    init(
+        city: String,
+        postalCode: Int?,
+        street: String,
+        streetCode: String,
+        country: String
+    ) {
+        self.city = city
+        self.postalCode = postalCode
+        self.street = street
+        self.streetCode = streetCode
+        self.country = country
     }
 }
 

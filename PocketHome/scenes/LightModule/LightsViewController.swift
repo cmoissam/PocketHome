@@ -46,8 +46,6 @@ class LightsViewController: UIViewController {
     private func setUpBindings() {
         updateIntensityValue(value: viewModel.intensity.value)
         
-        modeSwitch.rx.value <-> viewModel.mode
-        
         viewModel.mode.subscribe(onNext: { [weak self] value in
             if value {
                 self?.intensityStackView.isHidden = false
@@ -56,9 +54,10 @@ class LightsViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
         
-        
+        modeSwitch.rx.value <-> viewModel.mode
         intensitySlider
-            .rx.value
+            .rx.controlEvent(.valueChanged)
+            .withLatestFrom(intensitySlider.rx.value)
             .subscribe(onNext: { [weak self] (value) in
                 let integerValue = Int(value)
                 self?.intensityValueLabel.text = "\(integerValue)"
