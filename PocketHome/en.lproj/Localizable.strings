@@ -23,3 +23,6 @@
 
 //MARK: - Heaters
 "heaters.temperature" = "temperature";
+
+//MARK: - Lights
+"lights.intensity" = "intensity";

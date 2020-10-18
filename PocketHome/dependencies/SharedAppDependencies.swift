@@ -41,7 +41,9 @@ class SharedAppDependencies: SharedRootContainer {
     }
     
     func makeLighViewController(moduleId: Int) -> UIViewController {
-        UIViewController()
+        LightsViewController(
+            viewModel: LightViewModel(storeService: storeService, moduleId: moduleId)
+        )
     }
     
     func makeRollerShutterViewController(moduleId: Int) -> UIViewController {

@@ -48,6 +48,9 @@
 		DA9F1D31253C604D0097DD00 /* HeatersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1D2F253C604D0097DD00 /* HeatersViewController.xib */; };
 		DA9F1D32253C604D0097DD00 /* HeatersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1D30253C604D0097DD00 /* HeatersViewController.swift */; };
 		DA9F1D37253C604D0097DD00 /* HeaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1D36253C604D0097DD00 /* HeaterViewModel.swift */; };
+		DA9F1D46253C604D0097DD00 /* LightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1D44253C604D0097DD00 /* LightsViewController.swift */; };
+		DA9F1D47253C604D0097DD00 /* LightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9F1D45253C604D0097DD00 /* LightsViewController.xib */; };
+		DA9F1D4C253C604D0097DD00 /* LightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9F1D4B253C604D0097DD00 /* LightViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,9 @@
 		DA9F1D2F253C604D0097DD00 /* HeatersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeatersViewController.xib; sourceTree = "<group>"; };
 		DA9F1D30253C604D0097DD00 /* HeatersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatersViewController.swift; sourceTree = "<group>"; };
 		DA9F1D36253C604D0097DD00 /* HeaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaterViewModel.swift; sourceTree = "<group>"; };
+		DA9F1D44253C604D0097DD00 /* LightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightsViewController.swift; sourceTree = "<group>"; };
+		DA9F1D45253C604D0097DD00 /* LightsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightsViewController.xib; sourceTree = "<group>"; };
+		DA9F1D4B253C604D0097DD00 /* LightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +312,9 @@
 		DA9F1CD9253C604D0097DD00 /* LightModule */ = {
 			isa = PBXGroup;
 			children = (
+				DA9F1D4B253C604D0097DD00 /* LightViewModel.swift */,
+				DA9F1D44253C604D0097DD00 /* LightsViewController.swift */,
+				DA9F1D45253C604D0097DD00 /* LightsViewController.xib */,
 			);
 			path = LightModule;
 			sourceTree = "<group>";
@@ -443,6 +452,7 @@
 				DA9F1CF5253C604D0097DD00 /* UserProfileViewController.xib in Resources */,
 				DA9F1D25253C604D0097DD00 /* Localizable.strings in Resources */,
 				DA9F1D31253C604D0097DD00 /* HeatersViewController.xib in Resources */,
+				DA9F1D47253C604D0097DD00 /* LightsViewController.xib in Resources */,
 				DA9F1C48253C604D0097DD00 /* LaunchScreen.storyboard in Resources */,
 				DA9F1CED253C604D0097DD00 /* ModuleTableViewCell.xib in Resources */,
 				DA9F1C45253C604D0097DD00 /* Assets.xcassets in Resources */,
@@ -511,6 +521,7 @@
 				DA9F1CEE253C604D0097DD00 /* ModuleTableViewCell.swift in Sources */,
 				DA9F1CD1253C604D0097DD00 /* SharedAppDependencies.swift in Sources */,
 				DA9F1CA0253C604D0097DD00 /* User.swift in Sources */,
+				DA9F1D46253C604D0097DD00 /* LightsViewController.swift in Sources */,
 				DA9F1C9E253C604D0097DD00 /* Light.swift in Sources */,
 				DA9F1CA1253C604D0097DD00 /* Module.swift in Sources */,
 				DA9F1D02253C604D0097DD00 /* UIComponents.swift in Sources */,
@@ -518,6 +529,7 @@
 				DA9F1CDD253C604D0097DD00 /* DashboardViewController.swift in Sources */,
 				DA9F1CC9253C604D0097DD00 /* StoreService.swift in Sources */,
 				DA9F1C9F253C604D0097DD00 /* RollerShutter.swift in Sources */,
+				DA9F1D4C253C604D0097DD00 /* LightViewModel.swift in Sources */,
 				DA9F1CE3253C604D0097DD00 /* DashboardViewModel.swift in Sources */,
 				DA9F1CA2253C604D0097DD00 /* Home.swift in Sources */,
 				DA9F1C3C253C604D0097DD00 /* AppDelegate.swift in Sources */,
