@@ -20,3 +20,6 @@
 "profile.button.save" = "save";
 "profile.alert.title" = "validation Error";
 "profile.alert.message" = "invalid first name or last name";
+
+//MARK: - Heaters
+"heaters.temperature" = "temperature";

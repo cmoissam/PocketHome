@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeatersViewController" customModule="PocketHome" customModuleProvider="target">
+            <connections>
+                <outlet property="modeSwitch" destination="acl-Uq-pam" id="99q-XS-Lyv"/>
+                <outlet property="temperatureSlider" destination="4bt-ek-YSa" id="ApS-PN-XyY"/>
+                <outlet property="temperatureStackView" destination="COc-i1-TIX" id="eMx-4u-AU3"/>
+                <outlet property="temperatureValueLabel" destination="6WV-kB-8jc" id="WqW-1u-9m8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON/OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3T-NT-BKt">
+                    <rect key="frame" x="16" y="74" width="323" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" systemColor="systemOrangeColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acl-Uq-pam">
+                    <rect key="frame" x="349" y="74" width="51" height="31"/>
+                    <color key="onTintColor" systemColor="systemOrangeColor"/>
+                </switch>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="COc-i1-TIX">
+                    <rect key="frame" x="16" y="125" width="382" height="81"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymx-n8-RsW" customClass="LocalizedLabel" customModule="PocketHome" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="21.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="keyValue" value="heaters.temperature"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="7" maxValue="28" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-ek-YSa">
+                            <rect key="frame" x="-2" y="25.5" width="386" height="31"/>
+                            <color key="minimumTrackTintColor" systemColor="systemOrangeColor"/>
+                            <color key="thumbTintColor" systemColor="systemIndigoColor"/>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WV-kB-8jc">
+                            <rect key="frame" x="0.0" y="59.5" width="382" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="acl-Uq-pam" firstAttribute="leading" secondItem="z3T-NT-BKt" secondAttribute="trailing" constant="10" id="DS5-G8-nDz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="acl-Uq-pam" secondAttribute="trailing" constant="16" id="UnR-7j-CHR"/>
+                <constraint firstItem="COc-i1-TIX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VbW-Hm-LE2"/>
+                <constraint firstItem="COc-i1-TIX" firstAttribute="top" secondItem="acl-Uq-pam" secondAttribute="bottom" constant="20" id="Vgb-0t-pH8"/>
+                <constraint firstItem="z3T-NT-BKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="WMf-oP-jRX"/>
+                <constraint firstAttribute="trailing" secondItem="COc-i1-TIX" secondAttribute="trailing" constant="16" id="fSO-cr-WXZ"/>
+                <constraint firstItem="z3T-NT-BKt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="ibN-1r-w2V"/>
+                <constraint firstItem="acl-Uq-pam" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="vis-7A-EU7"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

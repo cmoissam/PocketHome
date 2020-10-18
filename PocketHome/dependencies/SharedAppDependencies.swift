@@ -35,7 +35,9 @@ class SharedAppDependencies: SharedRootContainer {
     }
     
     func makeHeaterViewController(moduleId: Int) -> UIViewController {
-        UIViewController()
+        HeatersViewController(
+            viewModel: HeaterViewModel(storeService: storeService, moduleId: moduleId)
+        )
     }
     
     func makeLighViewController(moduleId: Int) -> UIViewController {
